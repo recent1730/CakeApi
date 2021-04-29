@@ -14,6 +14,7 @@ from pathlib import Path
 import os
 import environ
 
+
 # env = environ.Env()
 # environ.Env.read_env()
 
@@ -43,11 +44,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cakeapi.apps.CakeapiConfig',
+    'cakeapi',
     'rest_framework',
     'django_rest_passwordreset',
     'corsheaders',
-    
     'rest_framework.authtoken',
     ]
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

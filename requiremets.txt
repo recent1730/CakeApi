@@ -1,0 +1,14 @@
+asgiref==3.3.4
+Django==3.2
+django-cors-headers==3.7.0
+django-environ==0.4.5
+django-filter==2.4.0
+django-rest-passwordreset==1.1.0
+django-rest-resetpassword==0.1.2
+djangorestframework==3.12.4
+environ==1.0
+Pillow==8.2.0
+python-decouple==3.4
+pytz==2021.1
+sendmail==2.0
+sqlparse==0.4.1
