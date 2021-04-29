@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+import environ
+
+# env = environ.Env()
+# environ.Env.read_env()
 
 from decouple import config
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -71,7 +75,7 @@ EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = config('EMAIL_PORT')
 EMAIL_USE_TLS =config('EMAIL_USE_TLS')
-
+DEFAULT_FROM_EMAIL = 'default from email'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
