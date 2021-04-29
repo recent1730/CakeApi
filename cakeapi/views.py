@@ -44,7 +44,7 @@ class placeorder(APIView):
             if serialize.is_valid():
                 serialize.save()
                 queryset = Carts.objects.filter(email=request.data['email']).delete()
-                print(queryset)
+                # print(queryset)
                 return Response({"message": "order placed","order":serialize.data},status=status.HTTP_200_OK)
             return Response(serialize.errors,status=status.HTTP_400_BAD_REQUEST)
 
