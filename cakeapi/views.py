@@ -62,7 +62,7 @@ class CakeAddView(CreateAPIView):
 
 class CakeListView(ListAPIView):
     queryset = Cake.objects.all()
-    print(queryset)
+    # print(queryset)
     # print(serializer.data)
     serializer_class = AllCakeSerializer
 
@@ -129,9 +129,7 @@ class PlaceOrder(APIView):
         result = Carts.objects.get(email=email)
         print("sahi  hai ki nahi ..... ", result)
 
-        # for x in result:
-        #     print(x)
-        #     print("-----------/..--")
+        
         id = result.cakeid
         print(id)
         serializer = PlaceOrderSerializer(data=data ,partial=True)
